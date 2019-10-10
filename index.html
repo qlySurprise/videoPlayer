@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5video播放插件</title>
+    <meta name="keywords" content="HTML5video播放插件" />
+    <meta name="description" content="HTML5视频播放插件 Power by PasserMa"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="images/x-icon" href="tittle.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="psVideo" class="psVideo">
+        <video src="file:///C:/Users/User/Desktop/1563246035(1).jpg" class="my-psVideo" id="my-video" poster="1.jpg" preload="metadata">
+        </video>
+        <div class="psVideo-loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="psVideo-play-one"></div>
+        <div class="psVideo-shade psVideo-shade-on">
+            <div class="psVideo-play-footer">
+                <div class="psVideo-progress">
+                    <span class="psVideo-timeBar"></span>
+                </div>
+                <div class="psVideo-play-btn psVideo-stop"></div>
+                <div class="psVideo-time">
+                    <span id="currentTime">00:00</span>
+                    <span>/</span>
+                    <span id="duration">00:00</span>
+                </div>
+                <div class="psVideo-dan">
+                    <input type="text" class="psVideo-dan-input" placeholder="点击输入弹幕,回车键发送"/>
+                    <span class="psVideo-dan-btn">发送</span>
+                </div>
+                <div class="psVideo-right-btn">
+                    <div class="psVideo-btn all"></div>
+                    <div class="psVideo-btn loop" id="loop"></div>
+                    <div class="psVideo-btn set">
+                        <div class="set-list">
+                            <div class="play-speed">播放速度</div>
+                            <div class="play-speed-list">
+                                <span id="speed05Btn">X0.5</span>
+                                <span class="moren" id="speed1Btn">X1</span>
+                                <span id="speed2Btn">X2</span>
+                            </div>
+                        </div>
+                        <div class="konge1"></div>
+                    </div>
+                    <div class="psVideo-btn huazhi">自动</div>
+                    <div class="psVideo-btn sound" id="soundBtn">
+                        <div class="sound-list">
+                            <div class="sound-number">90</div>
+                            <div class="volume">
+                                <span class="volumeBar"></span>
+                            </div>
+                        </div>
+                        <div class="konge"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
